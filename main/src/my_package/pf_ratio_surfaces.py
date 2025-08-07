@@ -234,7 +234,7 @@ def generate_pf_ratio_surface_grids_for_all_fluids(
                 for d in dummy_feats:
                     vec[d] = 1.0 if d == f"{cat_col}_{ft}" else 0.0
                 vec["Total.Fluid"] = (f - norms["x_mean"]["Total.Fluid"]) / norms["x_std"]["Total.Fluid"]
-                vec["Total.Proppant.Volume"] = (p - norms["x_mean"]["Total.Proppant.Volume"]) / norms["x_std"]["Total.Propellant.Volume"]
+                vec["Total.Proppant.Volume"] = (p - norms["x_mean"]["Total.Proppant.Volume"]) / norms["x_std"]["Total.Proppant.Volume"]
 
                 x_arr = np.array([vec[n] for n in feat_names], dtype=np.float32)
                 x_t = torch.from_numpy(x_arr).unsqueeze(0).to(device)
