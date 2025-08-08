@@ -1,0 +1,23 @@
+{
+    "csv_path": "/home/kamiar/chevron/Eagle-Ford/First/data/Eagle Ford Data(Eagle Ford)_train_val.csv",
+    "k_folds": 7,
+    "layer_dims": [
+        64,
+        256
+    ],
+    "activations": [
+        "tanh",
+        "softplus"
+    ],
+    "epochs": 500,
+    "lr": 0.0005,
+    "weight_decay": 0.0008,
+    "batch_size": 16,
+    "random_state": 42,
+    "loss_type": "huber",
+    "loss_weights": [
+        1.0,
+        0.1
+    ],
+    "include_ratio_features": true
+}
