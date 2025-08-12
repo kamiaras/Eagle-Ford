@@ -186,7 +186,7 @@ Performs k-fold CV training:
 ## P/F-Ratio Surface Generation (`src/my_package/pf_ratio_surfaces.py`)
 
 * **generate\_surface\_data(...)**
-  Returns `(fluid_vals, prop_vals, grid)` where `grid` is a pivoted DataFrame of predicted Output₁ over Total.Fluid × Total.Propellant.
+  Returns `(fluid_vals, prop_vals, grid)` where `grid` is a pivoted DataFrame of predicted Output₁ over Total.Fluid × Total.proppant .
 * **save\_3d\_response\_surfaces\_csv(...)**
   Calls `generate_surface_data` and writes `{run_id}_fold{fold}_surface.csv` with labeled rows/columns.
 * **plot\_3d\_response\_surfaces(...)**
@@ -207,7 +207,7 @@ Performs k-fold CV training:
 ## Sensitivity Analysis (`src/my_package/sensitivity.py`)
 
 * **plot\_sensitivity\_auto\_fluid(...)**
-  For fixed Propellant levels, sweeps Total.Fluid and plots Output1 curves with true-point overlay.
+  For fixed proppant  levels, sweeps Total.Fluid and plots Output1 curves with true-point overlay.
 * **plot\_sensitivity\_by\_pf\_ratio(...)**
   For fixed P/F ratios, sweeps Total.Fluid and plots Output1 curves with true-point overlay.
 
