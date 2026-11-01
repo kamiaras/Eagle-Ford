@@ -1,0 +1,31 @@
+# Local environments and Python cache
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.ipynb_checkpoints/
+
+# Private/original inputs and generated artifacts are not release contents.
+/data/
+/artifacts/
+/One-Drive/
+/arxive/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.pickle
+*.pth
+*.pt
+*.ckpt
+*_norms.json
+*_hyperparams.json
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.html
